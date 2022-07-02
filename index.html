@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.5/xlsx.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script> -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: #555;color:white">
+    <h1>Upload an excel file to convert into JSON</h1>
+    <!-- Input element to upload an excel file -->
+    <input type="file" id="file_upload" />
+    <button onclick="upload()">Upload</button>  
+    <br><br>
+    <!-- container to display the json result -->
+    <textarea id="json-result"></textarea>
+    <button onclick="generateGraph()">Generate Graph</button>
+    <div id="d3-container">
+        <h3 id="displayer"></h3>
+        <svg id="mySvg">
+
+        </svg>
+       
+    </div>
+    <div>
+        <canvas id="myChart"></canvas>
+      </div>
+      <button onclick="downloadSvg()">
+        Download your graph
+      </button>
+      <div id="strip"></div>
+    <script src="script.js"></script>
+</body>
+</html>

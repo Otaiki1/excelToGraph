@@ -1,0 +1,14 @@
+body, html{
+    height: 100%;
+}
+#json-result{
+    height:100px;
+    width:100%;
+    border:1px solid black;
+    background-color: #111;
+    color:lime;
+}
+.rect{
+    margin-right: 20px;
+}
+.rect:hover { opacity: 0.5; }
